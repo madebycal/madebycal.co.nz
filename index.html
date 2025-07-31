@@ -10,15 +10,15 @@
 </head>
 <body>
   <h1>Made by Cal</h1>
-  <p>Browse my zines below:</p>
+  <p>Browse:</p>
   
   <select id="zineDropdown">
-    <option value="">Select a zine...</option>
+    <option value="">Select...</option>
     <option value="zines/zine1.html">Zine Title One</option>
   </select>
 
   <script>
-    document.getElementById("zineDropdown").addEventListener("change", function() {
+    document.getElementById("Dropdown").addEventListener("change", function() {
       const url = this.value;
       if (url) window.location.href = url;
     });
