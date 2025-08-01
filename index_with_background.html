@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    select {
+      font-size: 1.2rem;
+      padding: 0.4rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Library</h1>
+    <p>Archive:</p>
+
+    <select id="zineDropdown">
+      <option value="">Select...</option>
+      <option value="zines/zine1.html">194</option>
+      <option value="zines/zine1.html">Commute</option>
+      <option value="zines/zine1.html">Continental Drift</option>
+      <option value="zines/zine1.html">sticksandstones</option>
+    </select>
+  </div>
+
+  <script>
+    document.getElementById("zineDropdown").addEventListener("change", function() {
+      const url = this.value;
+      if (url) window.location.href = url;
+    });
+  </script>
+</body>
+</html>
