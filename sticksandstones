@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>sticksandstones</title>
+  <title>Commute</title>
   <style>
     body { font-family: sans-serif; margin: 2rem; }
     iframe { width: 100%; height: 90vh; border: none; }
   </style>
 </head>
 <body>
-  <a href="../index.html">← Back to MadeByCal</a>
+  <a href="../index.html">← Back to Library</a>
   <h1>sticksandstones</h1>
-  <iframe src="Copy 10.pdf"></iframe>
+  <iframe src="sticksandstones.pdf"></iframe>
 </body>
 </html>
