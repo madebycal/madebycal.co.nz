@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 300px;
+  width: 60%;
+  height: auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.project-tile {
+  background-color: #eee;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.project-tile:hover {
+  background-color: #ddd;
+}
